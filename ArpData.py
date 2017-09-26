@@ -1,3 +1,7 @@
+"""
+Timed storage ARP form
+"""
+
 import os
 import time
 import pyodbc
@@ -6,7 +10,7 @@ import sys
 
 
 while True:
-        conn=pyodbc.connect('DRIVER={FreeTDS};SERVER=172.16.7.1;port=1433;DATABASE=shuihu;UID=sa;PWD=666666;TDS_Version=8.0;')
+        conn=pyodbc.connect('DRIVER={FreeTDS};SERVER=******;port=1433;DATABASE=******;UID=sa;PWD=******;TDS_Version=8.0;')
         print 'connect ok......'
         os.system('arp -a > ArpD.txt')
         f=open("ArpD.txt","r")
